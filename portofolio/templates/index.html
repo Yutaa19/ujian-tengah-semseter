@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<style>
+    html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #1a1d20 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1 0 auto;
+}
+
+
+</style>
+<body >
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid mx-auto p-2">
+    <a class="navbar-brand fs-1 fw-bold text-white" href="#">Portofolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active fw-bolder text-white" aria-current="page" href="#">Home</a>
+        <a class="nav-link fw-bolder text-white" href="#">Blog</a>
+        <a class="nav-link fw-bolder text-white" href="#">Projects</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- navbar end -->
+
+<!-- content -->
+    <main class="container mt-5">
+        <section class="row align-item-center bg-dark p-10 rounded-4 shadow">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="{% static 'image/yutaa.jpeg' %}" alt="yutaa" class="img-fluid rounded-circle border border-2 border-white shadow-sm" style="max-width: 250px;">
+            </div>
+            <div class="col-md-8 text-white text-center text-md-start mt-4">
+                <h1 class="fw-bold mb-1">Welcome to my portfolio</h1>
+                
+                <h2 class="h3 text-primary mb-3">Mohamad Rafly Andreanto</h2>
+                <p class="lead text-light mb-4">
+                    Mahasiswa aktif S1
+                </p>
+                <p class="text-white-50 mb-4">
+                    Menggabungkan kekuatan Artificial Intelligence dengan ekosistem Web Development. Tertarik dalam membangun solusi berbasis Python, Django, dan pengembangan model AI yang inovatif.
+                </p>
+
+                <a href="https://github.com/kuuhaku1986" target="_blank" class="btn btn-outline-light btn-lg d-inline-flex align-items-center gap-2">
+                    Kunjungi GitHub
+                </a>
+            </div>
+        </section>
+
+      <section class="row g-2 mt-2">
+    <div class="col-md-4"> <div class="bg-dark p-4 rounded-4 shadow text-white h-100">
+            <h2 class="h4 mb-4 border-bottom pb-2">Media Sosial</h2>
+            
+            <div class="d-flex align-items-center mb-3">
+                <i class="fab fa-instagram fa-lg text-danger me-3"></i>
+                <a href="https://instagram.com/username_kamu" class="text-decoration-none text-white">@SuperAndre</a>
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+                <i class="fab fa-linkedin fa-lg text-primary me-3"></i>
+                <a href="https://linkedin.com/in/mohamad-rafly-andreanto" class="text-decoration-none text-white">Mohamad Rafly Andreanto</a>
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+                <i class="fab fa-x-twitter fa-lg text-light me-3"></i>
+                <a href="https://x.com/username_kamu" class="text-decoration-none text-white">@CeoMbg</a>
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+                <i class="fab fa-github fa-lg text-white me-3"></i>
+                <a href="https://github.com/kuuhaku1986" class="text-decoration-none text-white">kuuhaku1986</a>
+            </div>
+            
+            <hr class="text-secondary">
+            <p class="small text-white-50 mt-2">Pendidikan: Universitas Islam Negeri Salatiga</p>
+        </div>   
+    </div>
+
+    <div class="col-md-8">
+    <div class="bg-dark p-4 rounded-4 shadow text-white h-100">
+        <h3 class="h4 mb-4 border-bottom pb-2">
+            Projects (dummy)
+        </h3>
+
+        <div class="row g-3">
+            
+            <div class="col-md-6 mb-2">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-robot text-primary fa-lg me-3"></i>
+                    <div>
+                        <h5 class="h6 mb-0">AI Assistant</h5>
+                        <small class="text-white-50">RAG-based Chatbot</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-2">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-code text-success fa-lg me-3"></i>
+                    <div>
+                        <h5 class="h6 mb-0">Portofolio Landing page</h5>
+                        <small class="text-white-50">Django Web Dev</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-2">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-chart-line text-warning fa-lg me-3"></i>
+                    <div>
+                        <h5 class="h6 mb-0">Crypto Quant Script</h5>
+                        <small class="text-white-50">Python Analysis</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-2">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-laptop-code text-info fa-lg me-3"></i>
+                    <div>
+                        <h5 class="h6 mb-0">Dashboard Streamlit</h5>
+                        <small class="text-white-50">Data Analyst</small>
+                    </div>
+                </div>
+            </div>
+
+        </div> <div class="mt-4 pt-3 border-top border-secondary">
+            <a href="https://github.com/kuuhaku1986" class="text-white-50 text-decoration-none small">
+                <i class="fab fa-github me-1"></i> View all repositories →
+            </a>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+
+<!-- content end -->
+
+<!-- footer -->
+
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-0 small text-white-50">
+            &copy; 2026 Mohamad Rafly Andreanto | Built with Django
+        </p>
+    </div>
+</footer>
+
+<!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
